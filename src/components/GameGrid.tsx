@@ -8,25 +8,25 @@ const games = [
     slug: "pharaoh",
     name: "Socialt slot: Det gamle Egypten",
     desc: "Et klassisk og populært socialt slot. Ingen rigtige penge — kun virtuel valuta.",
-    image: "/images/game-pharaoh.jpg",
+    image: "/images/slot-pharaoh.jpg",
   },
   {
     slug: "cleopatra",
     name: "Socialt slot: Egyptiske dronninger",
     desc: "Et populært socialt slot med klassiske symboler. Ingen gevinster i rigtige penge.",
-    image: "/images/game-cleopatra.jpg",
+    image: "/images/slot-cleopatra.jpg",
   },
   {
     slug: "aztec",
     name: "Socialt slot: Aztekiske civilisationer",
     desc: "En social slot-oplevelse inspireret af legender. Kun underholdning, ingen reel værdi.",
-    image: "/images/game-aztec.jpg",
+    image: "/images/slot-aztec.jpg",
   },
   {
     slug: "bonanza",
     name: "Socialt slot: Vild eventyr",
     desc: "Vild social slot til sjov. Ingen indskud og ingen udbetalinger; valutaen forbliver virtuel.",
-    image: "/images/game-bonanza.jpg",
+    image: "/images/slot-bonanza.jpg",
   },
 ];
 

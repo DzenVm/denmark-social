@@ -21,7 +21,7 @@ export default function LandingHero() {
 
           <Link href="/spil" className={styles.heroImageWrap} aria-label="Spil det sociale slot nu">
             <Image
-              src="/images/hero.webp"
+              src="/images/landing-hero.webp"
               alt="Sociale onlinespil — virtuel valuta"
               width={560}
               height={520}
