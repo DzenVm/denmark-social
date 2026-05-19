@@ -1,21 +1,21 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import GamesSection from "@/components/GamesSection";
-import InfoSection from "@/components/InfoSection";
-import ResponsibleSection from "@/components/ResponsibleSection";
-import Footer from "@/components/Footer";
+import SiteHeader from "@/components/SiteHeader";
+import LandingHero from "@/components/LandingHero";
+import GameGrid from "@/components/GameGrid";
+import ContentSection from "@/components/ContentSection";
+import GamblingAwareness from "@/components/GamblingAwareness";
+import SiteFooter from "@/components/SiteFooter";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <SiteHeader />
       <main>
-        <Hero />
-        <GamesSection />
-        <InfoSection />
-        <ResponsibleSection />
+        <LandingHero />
+        <GameGrid />
+        <ContentSection />
+        <GamblingAwareness />
       </main>
-      <Footer />
+      <SiteFooter />
     </>
   );
 }

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jocuri Sociale Gratuite (18+) | Fără Bani Reali",
+  title: "Gratis Sociale Spil (18+) | Ingen Rigtige Penge",
   description:
-    "Jocuri sociale doar pentru divertisment. Fără bani reali, fără depuneri și fără retrageri. Doar pentru utilizatori de 18+.",
+    "Sociale spil udelukkende til underholdning. Ingen rigtige penge, ingen indskud og ingen udbetalinger. Kun for brugere på 18+.",
   robots: "index, follow",
   icons: { icon: "/favicon.svg" },
 };
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ro">
+    <html lang="da">
       <body>{children}</body>
     </html>
   );

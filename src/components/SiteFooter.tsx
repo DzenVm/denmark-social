@@ -1,25 +1,25 @@
 import Link from "next/link";
 
 const footerLinks = [
-  { href: "/", label: "Acasă" },
-  { href: "/cum-sa-joci", label: "Cum să joci" },
-  { href: "/#responsabil", label: "Jocuri Responsabile" },
-  { href: "/confidentialitate", label: "Confidențialitate & Termeni" },
+  { href: "/", label: "Hjem" },
+  { href: "/saadan-spiller-du", label: "Sådan spiller du" },
+  { href: "/#ansvarligt-spil", label: "Ansvarligt Spil" },
+  { href: "/fortrolighed", label: "Fortrolighed & Vilkår" },
 ];
 
-export default function Footer() {
+export default function SiteFooter() {
   return (
     <footer style={{ borderTop: "1px solid var(--border)", padding: "28px 0 40px" }}>
       <div className="container">
         <div style={{ display: "flex", justifyContent: "space-between", gap: 20, flexWrap: "wrap", alignItems: "flex-start" }}>
           <div>
             <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 16 }}>
-              {footerLinks.map(l => (
-                <Link key={l.href} href={l.href} style={{
+              {footerLinks.map(link => (
+                <Link key={link.href} href={link.href} style={{
                   padding: "9px 12px", borderRadius: 10, border: "1px solid var(--border)",
                   background: "rgba(255,255,255,.03)", color: "var(--muted)", fontWeight: 700, fontSize: 13,
                 }}>
-                  {l.label}
+                  {link.label}
                 </Link>
               ))}
             </div>
@@ -28,18 +28,18 @@ export default function Footer() {
               background: "rgba(255,107,53,.1)", border: "1px solid rgba(255,107,53,.2)",
               borderRadius: 8, padding: "6px 12px", fontSize: 12, fontWeight: 700, color: "var(--accent)",
             }}>
-              DOAR 18+ | FĂRĂ BANI REALI | DOAR PENTRU DIVERTISMENT
+              KUN 18+ | INGEN RIGTIGE PENGE | KUN TIL UNDERHOLDNING
             </div>
           </div>
 
           <div style={{ color: "var(--muted)", fontSize: 12, maxWidth: 420, lineHeight: 1.6 }}>
-            Nu oferim posibilitatea de a câștiga sau retrage bani reali. Moneda virtuală nu are valoare reală.
+            Vi tilbyder ingen mulighed for at vinde eller hæve rigtige penge. Virtuel valuta har
+            ingen reel værdi.
             <br /><br />
-            <strong>Informații juridice (Polonia):</strong><br />
-            NIP: 6812099049<br />
-            Firmă: ER SP Z O O<br />
-            Adresă: 8 Ul. Marii Konopnickiej, Limanowa, 34-600<br />
-            Țara: Polonia
+            <strong>Juridiske oplysninger:</strong><br />
+            Dette er en social spilplatform til underholdning.<br />
+            Ingen hasardspil med rigtige penge — ingen licens påkrævet i henhold til dansk spillelov.<br />
+            Brug for hjælp? Ring 70 22 28 25 eller besøg rofus.nu.
           </div>
         </div>
       </div>

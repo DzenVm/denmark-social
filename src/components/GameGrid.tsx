@@ -6,44 +6,44 @@ import Image from "next/image";
 const games = [
   {
     slug: "pharaoh",
-    name: "Slot social: Egipt antic",
-    desc: "Un slot social clasic și popular. Fără bani reali — doar monedă virtuală.",
+    name: "Socialt slot: Det gamle Egypten",
+    desc: "Et klassisk og populært socialt slot. Ingen rigtige penge — kun virtuel valuta.",
     image: "/images/game-pharaoh.jpg",
   },
   {
     slug: "cleopatra",
-    name: "Slot social: Regine egiptene",
-    desc: "Un slot social popular, cu simboluri clasice. Nu există câștiguri în bani reali.",
+    name: "Socialt slot: Egyptiske dronninger",
+    desc: "Et populært socialt slot med klassiske symboler. Ingen gevinster i rigtige penge.",
     image: "/images/game-cleopatra.jpg",
   },
   {
     slug: "aztec",
-    name: "Slot social: Civilizații aztece",
-    desc: "O experiență socială tip slot, inspirată din legende. Doar divertisment, fără valoare reală.",
+    name: "Socialt slot: Aztekiske civilisationer",
+    desc: "En social slot-oplevelse inspireret af legender. Kun underholdning, ingen reel værdi.",
     image: "/images/game-aztec.jpg",
   },
   {
     slug: "bonanza",
-    name: "Slot social: Aventură wild",
-    desc: "Slot social wild pentru distracție. Fără depuneri și fără retrageri; moneda rămâne virtuală.",
+    name: "Socialt slot: Vild eventyr",
+    desc: "Vild social slot til sjov. Ingen indskud og ingen udbetalinger; valutaen forbliver virtuel.",
     image: "/images/game-bonanza.jpg",
   },
 ];
 
-export default function GamesSection() {
+export default function GameGrid() {
   return (
-    <section id="jocuri" style={{ padding: "80px 0" }}>
+    <section id="spil" style={{ padding: "80px 0" }}>
       <div className="container">
         <div style={{ marginBottom: 32 }}>
           <h2 style={{ margin: "0 0 8px", fontSize: "clamp(22px,3vw,32px)", fontWeight: 900, letterSpacing: "-.02em" }}>
-            Alege un joc social
+            Vælg et socialt spil
           </h2>
           <p style={{ margin: 0, color: "var(--muted)", fontSize: 14 }}>
-            Sloturi sociale gratuite — fără bani reali, doar monedă virtuală
+            Gratis sociale spillemaskiner — ingen rigtige penge, kun virtuel valuta
           </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 20 }} className="games-grid">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 20 }} className="game-tiles">
           {games.map(game => (
             <article
               key={game.slug}
@@ -63,18 +63,16 @@ export default function GamesSection() {
                 (e.currentTarget as HTMLElement).style.borderColor = "";
               }}
             >
-              {/* Badge */}
               <div style={{ padding: "14px 16px 0" }}>
                 <span style={{
                   display: "inline-flex", alignItems: "center", gap: 6,
                   padding: "6px 12px", borderRadius: 999, border: "1px solid rgba(255,255,255,.12)",
                   background: "rgba(255,255,255,.04)", fontWeight: 800, fontSize: 12,
                 }}>
-                  Social · Gratuit
+                  Socialt · Gratis
                 </span>
               </div>
 
-              {/* Game image */}
               <div style={{
                 margin: "14px 16px 0", borderRadius: "var(--radius-md)",
                 border: "1px solid rgba(255,255,255,.1)", overflow: "hidden",
@@ -89,13 +87,12 @@ export default function GamesSection() {
                 />
               </div>
 
-              {/* Body */}
               <div style={{ padding: "14px 16px 16px", display: "flex", flexDirection: "column", gap: 8, flex: 1 }}>
                 <h3 style={{ margin: 0, fontSize: 17, fontWeight: 900, letterSpacing: "-.01em" }}>{game.name}</h3>
                 <p style={{ margin: 0, color: "var(--muted)", fontSize: 14, flex: 1, lineHeight: 1.5 }}>{game.desc}</p>
                 <div style={{ paddingTop: 4 }}>
                   <Link
-                    href={`/joc?game=${game.slug}`}
+                    href={`/spil?game=${game.slug}`}
                     style={{
                       display: "flex", alignItems: "center", justifyContent: "center",
                       padding: "12px 14px", borderRadius: "var(--radius-md)", width: "100%",
@@ -105,7 +102,7 @@ export default function GamesSection() {
                       boxShadow: "0 10px 24px rgba(255,107,53,.16)",
                     }}
                   >
-                    Joacă
+                    Spil
                   </Link>
                 </div>
               </div>
@@ -116,7 +113,7 @@ export default function GamesSection() {
 
       <style>{`
         @media (max-width: 700px) {
-          .games-grid { grid-template-columns: 1fr !important; }
+          .game-tiles { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </section>
