@@ -30,7 +30,7 @@ export default function LandingHero() {
             />
           </Link>
 
-          <Link href="/spil" className={`btn btn-hero-cta ${styles.heroCta}`}>
+          <Link href="/spil" className={`btn cta-glow ${styles.heroCta}`}>
             Spil Nu
           </Link>
         </div>

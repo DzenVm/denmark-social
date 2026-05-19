@@ -25,7 +25,7 @@ export default function SiteFooter() {
             </div>
             <div style={{
               display: "inline-flex", alignItems: "center", gap: 6,
-              background: "rgba(255,107,53,.1)", border: "1px solid rgba(255,107,53,.2)",
+              background: "rgba(14,165,165,.1)", border: "1px solid rgba(14,165,165,.2)",
               borderRadius: 8, padding: "6px 12px", fontSize: 12, fontWeight: 700, color: "var(--accent)",
             }}>
               KUN 18+ | INGEN RIGTIGE PENGE | KUN TIL UNDERHOLDNING

@@ -62,7 +62,7 @@ export default function GamblingAwareness() {
               display: "inline-flex", alignItems: "center", justifyContent: "center",
               padding: "0 18px", minHeight: 50, borderRadius: "var(--radius-md)",
               border: "1px solid rgba(220,38,38,.35)",
-              background: "linear-gradient(135deg, #dc2626, #ff6b35)",
+              background: "linear-gradient(135deg, #dc2626, #f0506a)",
               fontWeight: 900, fontSize: 22, color: "#fff",
               boxShadow: "0 12px 32px rgba(220,38,38,.22)",
               flexShrink: 0,
@@ -85,7 +85,7 @@ export default function GamblingAwareness() {
                 }}
                 onMouseEnter={e => {
                   (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
-                  (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,107,53,.3)";
+                  (e.currentTarget as HTMLElement).style.borderColor = "rgba(14,165,165,.3)";
                 }}
                 onMouseLeave={e => {
                   (e.currentTarget as HTMLElement).style.transform = "";

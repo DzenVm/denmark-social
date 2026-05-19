@@ -31,8 +31,8 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 107, 53, .12);
-  border: 1px solid rgba(255, 107, 53, .3);
+  background: rgba(14, 165, 165, .12);
+  border: 1px solid rgba(14, 165, 165, .3);
   border-radius: 999px;
   padding: 6px 14px;
   font-size: 13px;
@@ -60,7 +60,7 @@
 }
 
 .heroAccent {
-  background: linear-gradient(135deg, #ff6b35, #ffd700);
+  background: linear-gradient(135deg, #0ea5a5, #38bdf8);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

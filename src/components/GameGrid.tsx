@@ -54,8 +54,8 @@ export default function GameGrid() {
               }}
               onMouseEnter={e => {
                 (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)";
-                (e.currentTarget as HTMLElement).style.boxShadow = "0 20px 48px rgba(255,107,53,.14), 0 8px 24px rgba(0,0,0,.28)";
-                (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,107,53,.28)";
+                (e.currentTarget as HTMLElement).style.boxShadow = "0 20px 48px rgba(14,165,165,.14), 0 8px 24px rgba(0,0,0,.28)";
+                (e.currentTarget as HTMLElement).style.borderColor = "rgba(14,165,165,.28)";
               }}
               onMouseLeave={e => {
                 (e.currentTarget as HTMLElement).style.transform = "";
@@ -98,8 +98,8 @@ export default function GameGrid() {
                       padding: "12px 14px", borderRadius: "var(--radius-md)", width: "100%",
                       fontWeight: 900, fontSize: 15,
                       background: "linear-gradient(135deg, var(--accent), var(--accent2))",
-                      border: "1px solid rgba(255,215,0,.25)", color: "#111827",
-                      boxShadow: "0 10px 24px rgba(255,107,53,.16)",
+                      border: "1px solid rgba(56,189,248,.25)", color: "#04141a",
+                      boxShadow: "0 10px 24px rgba(14,165,165,.16)",
                     }}
                   >
                     Spil

@@ -28,7 +28,7 @@ export default function SiteHeader() {
         right: 0,
         zIndex: 50,
         transition: "background .3s, border-color .3s",
-        background: isScrolled ? "rgba(11,18,32,.96)" : "transparent",
+        background: isScrolled ? "rgba(10,20,32,.96)" : "transparent",
         backdropFilter: isScrolled ? "blur(12px)" : "none",
         borderBottom: isScrolled ? "1px solid rgba(233,238,252,.1)" : "1px solid transparent",
       }}
@@ -62,7 +62,7 @@ export default function SiteHeader() {
       </div>
 
       {menuOpen && (
-        <div style={{ background: "rgba(11,18,32,.98)", borderTop: "1px solid var(--border)", padding: "16px 20px", display: "flex", flexDirection: "column", gap: 12 }}>
+        <div style={{ background: "rgba(10,20,32,.98)", borderTop: "1px solid var(--border)", padding: "16px 20px", display: "flex", flexDirection: "column", gap: 12 }}>
           {navItems.map(item => (
             <Link
               key={item.href}

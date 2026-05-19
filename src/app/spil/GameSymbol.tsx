@@ -11,11 +11,11 @@ export const ICON_LABELS: Record<ReelIcon, string> = {
 };
 
 const ICON_COLORS: Record<ReelIcon, string> = {
-  seven: "#ffd54a",
-  crown: "#ffb454",
-  star: "#ff7a45",
-  diamond: "#5ad1ff",
-  bell: "#ffd98a",
+  seven: "#38bdf8",
+  crown: "#2dd4bf",
+  star: "#818cf8",
+  diamond: "#7dd3fc",
+  bell: "#22d3ee",
 };
 
 const STROKE = "rgba(0,0,0,.35)";
