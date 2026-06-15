@@ -1,9 +1,11 @@
 "use client";
 
+import { SUPPORT_ORGS, SUPPORT_PHONE } from "@/lib/site";
+
 const adviceBlocks = [
   {
     title: "Yderligere information",
-    text: "Adgang begrænset til voksne: Kun personer på 18 år eller derover må bruge denne hjemmeside. Vi opfordrer til ansvarligt spil. Gældende vilkår findes på siden. Hjælp tilgængelig: Ring 70 22 28 25 eller besøg rofus.nu.",
+    text: `Adgang begrænset til voksne: Kun personer på 18 år eller derover må bruge denne hjemmeside. Vi opfordrer til ansvarligt spil. Gældende vilkår findes på siden. Hjælp tilgængelig: Ring ${SUPPORT_PHONE} eller besøg rofus.nu.`,
   },
   {
     title: "Forsvarligt spil — anbefalinger",
@@ -15,13 +17,7 @@ const adviceBlocks = [
   },
 ];
 
-const supportOrgs = [
-  { label: "Gambling Therapy", href: "https://www.gamblingtherapy.org/" },
-  { label: "Spillemyndigheden", href: "https://www.spillemyndigheden.dk/" },
-  { label: "StopSpillet", href: "https://www.stopspillet.dk/" },
-  { label: "Center for Ludomani", href: "https://ludomani.dk/" },
-  { label: "ROFUS", href: "https://www.rofus.nu/" },
-];
+const supportOrgs = SUPPORT_ORGS;
 
 export default function GamblingAwareness() {
   return (

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./LandingHero.module.css";
+import KeepParamsLink from "@/components/KeepParamsLink";
 
 const trustItems = [
   "Ingen indskud",
@@ -19,20 +20,24 @@ export default function LandingHero() {
             Sociale Spillemaskiner <span className={styles.heroAccent}>Online</span>
           </h1>
 
-          <Link href="/spil" className={styles.heroImageWrap} aria-label="Spil det sociale slot nu">
+          <KeepParamsLink
+            href="/spil"
+            className={styles.heroImageWrap}
+            aria-label="Spil det sociale slot nu"
+          >
             <Image
               src="/images/landing-hero.webp"
-              alt="Sociale onlinespil — virtuel valuta"
+              alt="Sociale onlinespil — virtuel valuta til underholdning"
               width={560}
               height={520}
               priority
               className={styles.heroImg}
             />
-          </Link>
+          </KeepParamsLink>
 
-          <Link href="/spil" className={`btn cta-glow ${styles.heroCta}`}>
+          <KeepParamsLink href="/spil" className={`btn cta-glow ${styles.heroCta}`}>
             Spil Nu
-          </Link>
+          </KeepParamsLink>
         </div>
 
         <div className={styles.heroRest}>
