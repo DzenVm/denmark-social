@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import KeepParamsLink from "@/components/KeepParamsLink";
 
 const navItems = [
   { href: "/#spil", label: "Spil" },
@@ -49,9 +48,9 @@ export default function SiteHeader() {
           ))}
         </div>
 
-        <KeepParamsLink href="/spil" className="btn" style={{ minWidth: "auto", padding: "10px 22px", fontSize: 14 }}>
+        <Link href="/spil" className="btn" style={{ minWidth: "auto", padding: "10px 22px", fontSize: 14 }}>
           Spil Nu
-        </KeepParamsLink>
+        </Link>
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -74,9 +73,9 @@ export default function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <KeepParamsLink href="/spil" className="btn" style={{ textAlign: "center", marginTop: 8 }}>
+          <Link href="/spil" className="btn" style={{ textAlign: "center", marginTop: 8 }}>
             Spil Nu
-          </KeepParamsLink>
+          </Link>
         </div>
       )}
 

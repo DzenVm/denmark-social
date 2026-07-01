@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef, useCallback, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
 import GameSymbol, { REEL_ICONS, ICON_LABELS, type ReelIcon } from "./GameSymbol";
@@ -60,10 +59,7 @@ const SUPPORT_LINKS = [
 ];
 
 export default function SlotGameClient() {
-  const themeParam = useSearchParams().get("game");
-  const [activeTheme, setActiveTheme] = useState<ThemeKey>(
-    themeParam && themeParam in SLOT_THEMES ? (themeParam as ThemeKey) : "pharaoh"
-  );
+  const [activeTheme, setActiveTheme] = useState<ThemeKey>("pharaoh");
   const theme = SLOT_THEMES[activeTheme];
 
   const [balance, setBalance] = useState(START_BALANCE);
@@ -204,9 +200,6 @@ export default function SlotGameClient() {
     setBannerVisible(false);
     setLog([]);
     setNote({ text: "Nyt spil valgt. Tryk Drej for at starte.", type: "info" });
-    if (typeof window !== "undefined") {
-      window.history.replaceState(null, "", `/spil?game=${key}`);
-    }
   };
 
   const machineWin = winRow.some(Boolean);

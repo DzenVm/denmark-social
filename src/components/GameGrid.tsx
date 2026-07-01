@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import KeepParamsLink from "@/components/KeepParamsLink";
+import Link from "next/link";
 
 const games = [
   {
@@ -91,8 +91,8 @@ export default function GameGrid() {
                 <h3 style={{ margin: 0, fontSize: 17, fontWeight: 900, letterSpacing: "-.01em" }}>{game.name}</h3>
                 <p style={{ margin: 0, color: "var(--muted)", fontSize: 14, flex: 1, lineHeight: 1.5 }}>{game.desc}</p>
                 <div style={{ paddingTop: 4 }}>
-                  <KeepParamsLink
-                    href={`/spil?game=${game.slug}`}
+                  <Link
+                    href="/spil"
                     style={{
                       display: "flex", alignItems: "center", justifyContent: "center",
                       padding: "12px 14px", borderRadius: "var(--radius-md)", width: "100%",
@@ -103,7 +103,7 @@ export default function GameGrid() {
                     }}
                   >
                     Spil
-                  </KeepParamsLink>
+                  </Link>
                 </div>
               </div>
             </article>
